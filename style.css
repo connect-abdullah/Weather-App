@@ -98,7 +98,7 @@ h1 {
   background-color: #171717e6;
 }
 
-.img {
+.logo {
   display: flex;
   justify-content: center;
   height: 8rem;
@@ -160,7 +160,7 @@ h1 {
     .search-input {
       font-size: 12px; /* Smaller font size */
       padding: 3px 1rem 3px 0.5rem;
-      
+
     }
   
     .search-button {

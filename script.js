@@ -7,7 +7,7 @@ const searchButton = document.querySelector(".search-button");
 const tempDiv = document.querySelector(".temp");
 const humidityDiv = document.querySelector(".humidity p");
 const windDiv = document.querySelector(".wind p");
-const imgDiv = document.querySelector(".img img");
+const imgDiv = document.querySelector(".logo img");
 
 // Function to fetch weather data
 async function fetchWeather(city) {
