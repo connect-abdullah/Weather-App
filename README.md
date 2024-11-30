@@ -27,4 +27,4 @@ This application uses the [OpenWeather API](https://openweathermap.org/api) to f
 ## 🧑‍💻 How to Run Locally  
 1. Clone this repository:  
    ```bash  
-   git clone https://github.com/your-username/weather-app.git  
+   git clone https://github.com/connect-abdullah/weather-app.git  
