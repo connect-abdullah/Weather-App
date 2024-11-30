@@ -13,12 +13,12 @@ const imgDiv = document.querySelector(".img img");
 async function fetchWeather(city) {
     const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${apiKey}`;
     try {
-        const response = await fetch(apiUrl);
-        if (!response.ok) throw new Error("City not found");
-        const data = await response.json();
-        updateWeatherData(data);
+        const response = await fetch(apiUrl); // Sends a request to OpenWeather
+        if (!response.ok) throw new Error("City not found"); // If the response is not good, show an error
+        const data = await response.json(); // Converts the response to a JavaScript object
+        updateWeatherData(data); // Pass the weather data to another function to update the page
     } catch (error) {
-        alert(error.message);
+        alert(error.message); // Shows an alert if something goes wrong
     }
 }
 
