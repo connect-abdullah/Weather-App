@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
+  </head>
+  
+  <body>
+    <div class="container bg-img">
+      <div class="heading"><h1>Weather App</h1></div>
+      <div class="main">
+        <div class="search">
+          <input
+            type="text"
+            class="search-input"
+            placeholder="🔍 Enter City Name...."
+            spellcheck="false"
+          />
+          <button class="search-button">Find</button>
+        </div>
+        <div class="data">
+          <div class="img">
+            <img src="https://img.icons8.com/?size=100&id=HeerCPLqyxuQ&format=png&color=000000" alt="weather svg"/>
+          </div>
+          <div class="temp">...</div>
+          <div class="info">
+            <div class="humidity">
+              <div>
+                <img
+                  src="https://img.icons8.com/?size=100&id=t6R21qhA5eKf&format=png&color=000000"
+                  alt="humidity"
+                  id="humidityImg"
+                />
+              </div>
+              <p>...</p>
+              <h4>Humidity</h4>
+            </div>
+            <div class="wind">
+              <div>
+                <img
+                  src="https://img.icons8.com/?size=100&id=jjb7r7iIe27C&format=png&color=000000"
+                  alt="wind"
+                  id="windImg"
+                />
+              </div>
+              <p>...</p>
+              <h4>Wind Speed</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

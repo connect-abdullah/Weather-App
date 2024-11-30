@@ -1,0 +1,202 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+color: black;
+}
+
+body {
+  background-color: rgb(0, 0, 0);
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  font-weight: 200;
+}
+
+.container {
+  /* border: 2px solid black; */
+  width: 38rem;
+  margin-top: 6rem;
+  height: 36rem;
+  padding: 2rem 2rem;
+  color: white;
+  border-radius: 5rem;
+  box-shadow: -1px 1px 20px 5px rgb(67 67 67 / 90%);
+}
+.bg-img {
+  background-image: url("https://img.freepik.com/free-vector/blurred-abstract-background_1107-152.jpg?t=st=1732962838~exp=1732966438~hmac=833f06f0b164c483115c358bd460b136f0d1dbf49e1ba07710206744f9574b46&w=1060");
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.heading {
+  display: flex;
+  justify-content: center;
+  color:cornsilk;
+}
+
+h1 {
+    color: rgb(255 184 184);
+    font-family:'Times New Roman', Times, serif;
+}
+
+.main {
+  /* border: 2px solid rgb(234, 7, 7); */
+  height: 28rem;
+  margin-top: 1rem;
+  padding: 1rem 1rem;
+}
+.search {
+  /* border: 2px solid rgb(7, 234, 155); */
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-image: url("https://img.freepik.com/free-vector/coloured-blurred-background_1112-504.jpg?t=st=1732962782~exp=1732966382~hmac=df0b195b9a2e3a664caaeb869c13e82f3e851f75ed61505b45c64412d6aff715&w=1060");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 9px 91px;
+  border-radius: 19px;
+  justify-content: center;
+}
+
+.data {
+  /* border: 2px solid rgb(7, 139, 234); */
+  height: 21rem;
+  margin-top: 1rem;
+}
+
+.search-input {
+  outline: none;
+  font-size: 14px;
+  border: none;
+  background: #fdfdfd70;
+  border-radius: 4px;
+  padding: 3px 2rem 3px 0.5rem;  /* top right bottom left */
+
+}
+
+.search-input::placeholder {
+  color: #020202;
+}
+
+.search-button {
+  background-color: #000000e6;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 6px 10px;
+  font-size: 12px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.search-button:hover {
+  background-color: #171717e6;
+}
+
+.img {
+  display: flex;
+  justify-content: center;
+  height: 8rem;
+}
+
+.temp {
+  display: flex;
+  justify-content: center;
+  font-size: 3rem;
+  font-weight: 400;
+  font-family:'Times New Roman', Times, serif;
+}
+
+.info {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 2rem;
+}
+
+.info.img {
+  height: 1rem;
+  margin-top: 10px;
+}
+
+#humidityImg {
+  height: 4rem;
+  margin-bottom: 8px;
+}
+#windImg {
+  height: 4rem;
+  margin-bottom: 8px;
+}
+
+
+
+/* Responsive Styles */
+
+/* Adjust for smaller screens (511px and below) */
+@media (max-width: 511px) {
+    .container {
+      width: 90%; /* Shrink the container */
+      margin-top: 3rem; /* Reduce top margin */
+      height: 37rem; /* Adjust height for content */
+      padding: 1rem; /* Reduce padding */
+      border-radius: 2rem; /* Smaller border radius */
+    }
+  
+    .main {
+      height: auto; /* Adjust height */
+      margin-top: 0.5rem;
+    }
+  
+    .search {
+      height: auto;
+      padding: 5px 10px; /* Reduce padding */
+      gap: 5px;
+    }
+  
+    .search-input {
+      font-size: 12px; /* Smaller font size */
+      padding: 3px 1rem 3px 0.5rem;
+    }
+  
+    .search-button {
+      font-size: 10px; /* Adjust button size */
+      padding: 4px 8px;
+    }
+  
+    .temp {
+      font-size: 2rem; /* Reduce font size for temperature */
+    }
+  
+    .info {
+      flex-direction: column; /* Stack the info vertically */
+      align-items: center;
+      gap: 1rem;
+    }
+  
+    #humidityImg,
+    #windImg {
+      height: 3rem; /* Smaller icons */
+    }
+  }
+  
+  /* Adjust for even smaller screens (height less than 637px) */
+  @media (max-height: 637px) {
+    .container {
+      padding: 1rem;
+      margin-top: 2rem;
+      height: 37rem;
+
+    }
+  
+    .temp {
+      font-size: 1.5rem; /* Reduce font size further */
+    }
+  
+    .info {
+      gap: 0.5rem;
+    }
+  }
